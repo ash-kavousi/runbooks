@@ -1,0 +1,12 @@
+site_name: Runbooks
+site_url: https://runbooks.com.au/
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Networking:
+      - IPv4 & IPv6 Fundamentals: networking/ipv4.md
+
+
