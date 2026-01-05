@@ -1,0 +1,100 @@
+/* Slightly smaller body text */
+.md-typeset {
+  font-size: 0.75rem;
+}
+
+/* Slightly smaller sidebar text */
+.md-sidebar {
+  font-size: 0.9rem;
+}
+
+/* Scale headings down to match smaller body text */
+.md-typeset h1 { font-size: 1.8rem; }
+.md-typeset h2 { font-size: 1.4rem; }
+.md-typeset h3 { font-size: 0.9rem; }
+.md-typeset h4 { font-size: 1.0rem; }
+
+/* Style section headers in left navigation */
+.md-nav__title,
+.md-nav__item--nested > .md-nav__link {
+  color: #64748b;   /* slate gray */
+  font-weight: 500;
+}
+
+.md-nav__item--nested > .md-nav__link {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+
+/* --------------------------------------------------
+   Footer cleanup
+   --------------------------------------------------
+   Material for MkDocs adds a default footer line:
+   "Made with Material for MkDocs"
+
+   The selector below hides ONLY the hyperlink part
+   of that line, which removes the visible text,
+   while keeping your custom copyright intact.
+   -------------------------------------------------- */
+
+.md-footer-meta__inner .md-copyright {
+  font-size: 0;
+}
+
+.md-footer-meta__inner .md-copyright::before {
+  content: "© 2026 Runbooks. Content is provided for educational purposes only.";
+  font-size: 0.6rem;
+}
+
+/* --------------------------------------------------
+   Typography
+   -------------------------------------------------- */
+
+:root {
+  --md-text-font: "IBM Plex Sans";
+  --md-code-font: monospace;
+}
+
+/* Prevent synthetic bold/italic */
+.md-typeset {
+  font-synthesis: none;
+}
+
+/* Semibold emphasis */
+.md-typeset strong {
+  font-weight: 560;
+}
+
+
+/* Sources block styling */
+.md-typeset .sources-block {
+  margin-top: 0.6rem;
+}
+
+.md-typeset .sources-block .sources-title {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--md-default-fg-color--lighter);
+  margin-bottom: 0.2rem;
+}
+
+.md-typeset .sources-block ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.8em;         /* adjust here */
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
