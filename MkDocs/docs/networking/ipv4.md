@@ -1,8 +1,19 @@
-# IPv4 & IPv6 Fundamentals
+---
+tags:
+  - networking
+  - ipv4
+  
+hide:
+  - toc
+---
+
+
+
+# IPv4 Fundamentals
 
 An **IP address** is a unique identifier assigned to each device connected to a network. A good analogy is a **postal address**: it helps data reach the correct destination.
 
-## IPv4 (Internet Protocol version 4)
+### IPv4 (Internet Protocol version 4)
 
 **IPv4** uses a **32-bit** address. It is written in **dotted-decimal** format, made of four numbers separated by dots:
 
@@ -12,13 +23,13 @@ Each of the four parts is called an **octet** because it contains **8 bits**. Wi
 
 With 32 bits total, IPv4 provides about **2^32 ≈ 4.3 billion** unique addresses.
 
-## Network and host portions (subnet masks)
+### Network and host portions (subnet masks)
 
 An IPv4 address can be thought of as two parts: a **network** part and a **host** part. The **subnet mask** defines where that split happens (for example `255.255.255.0`).
 
 This split helps devices and routers determine whether a destination is on the local network or must be reached through routing.
 
-## Classful addressing (historical background)
+### Classful addressing (historical background)
 
 In the early days of IPv4, addresses were grouped into fixed “classes” to simplify allocation. This is called **classful addressing**. It is important historically, but modern networks use classless addressing.
 
@@ -34,7 +45,7 @@ With default masks, the maximum hosts per network were typically:
 - Class B: 65,534  
 - Class C: 254  
 
-## Private vs public IPv4
+### Private vs public IPv4
 
 As the internet grew, the IPv4 pool started to run out. To extend IPv4, special ranges were reserved as **private IP addresses**. Private addresses can be reused across different networks because they only need to be unique inside a local network.
 
@@ -50,9 +61,15 @@ A **public IP address** is globally unique and routable on the internet, usually
 
 ## NAT (Network Address Translation)
 
-**NAT** allows many private devices to share one public IP address. A router translates internal private addresses to a public address when traffic goes out to the internet, and then maps responses back to the correct internal device.
+NAT allows many private devices to share one public IP address. A router translates internal private addresses to a public address when traffic goes out to the internet, and then maps responses back to the correct internal device.
 
 NAT helps conserve public IPv4 addresses and reduces direct exposure of internal addressing, but it does not replace proper firewall rules and security controls.
+
+```mermaid
+flowchart LR
+  A["Private IP LAN"] --> B["NAT Router"]
+  B --> C["Public IP Internet"]
+```
 
 ## Subnetting
 
@@ -88,5 +105,13 @@ IPv6 is written as eight groups (often called **hextets**). Each hextet represen
 IPv4 is still widely used, but limited. Private addressing and NAT helped IPv4 scale, while IPv6 provides the long-term solution with a huge address space. Many networks run both during the transition (**dual-stack**).
 
 
+---
+
+<div class="sources-block">
+  <div class="sources-title">Sources</div>
+  <ul>
+    <li><em>Cisco IPv4 documentation – https://www.cisco.com</em></li>
+  </ul>
+</div>
 
 
