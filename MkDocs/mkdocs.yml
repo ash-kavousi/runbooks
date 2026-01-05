@@ -37,6 +37,11 @@ nav:
       - Understanding Cyber Risk: security/understanding_risk_assessment.md
       - Risk Assessment Process: security/risk_assessment_steps_v2.md
       - Risk Assessment Methods: security/qualitative_vs_quantitative_risk_assessment_v1.md
+      - Risk Mitigation Plan: security/risk_mitigation_plan_v1.md
+      - Business Impact Analysis: security/business_impact_analysis_v1.md
+      - Asset Inventory: security/asset_inventory_v1.md
+      - Threat Identification: security/threat_identification_v1.md
+      - Regulatory Compliance: security/regulatory_compliance_standards_v1.md
   - Operations:
       - Overview: operations/index.md
   - Tags: tags.md

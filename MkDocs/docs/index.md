@@ -1,3 +1,8 @@
+---  
+hide:
+  - toc
+---
+
 # Runbooks
 
 Practical technical documentation and operational guidance covering networking, security, and infrastructure.
