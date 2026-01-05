@@ -44,7 +44,7 @@
 }
 
 .md-footer-meta__inner .md-copyright::before {
-  content: "© 2026 Runbooks. Content is provided for educational purposes only.";
+  content: "© 2026 Runbooks. Maintained by Ash Kavousi. Content is provided for educational and informational purposes only.";
   font-size: 0.6rem;
 }
 
